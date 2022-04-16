@@ -1,0 +1,50 @@
+@media only screen and (max-width:800px) {
+    .menuButton{
+      width: 30px;
+      display: block;
+      position: fixed;
+      z-index: 9999;
+      top: 5px;
+      right: 30px;
+      aspect-ratio: 1;
+      background-color: black;
+      background-image: url("./files/images/menu.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 0;
+  
+    }
+  
+    .menuButton[display-visible=false]{
+      background-image: url("./files/images/close.png");
+      background-color: transparent;
+    }
+  
+    .main{
+      position: relative;
+      margin: auto;
+      max-width: 100%;
+      grid-template-columns: 1fr;
+      
+    }
+  
+    .sideBar{
+      padding-top: 50px;
+      width: 100%;
+      height: 100vh;
+      margin-top: 0px;
+      background-color: #282c34;
+      z-index:12;
+      top:0;
+      left:0;
+      position: fixed;
+  
+      
+    }
+  
+    .sideBar[display-visible=false]{
+      display: none;
+    }
+    
+  
+  }

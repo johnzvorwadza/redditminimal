@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+:root{
+  --maincolor:rgba(0, 0, 0, 0.75);
+  --maincolordark:#0cf9e0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{padding: 0;margin: 0;position:relative;}
+html{
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body{
   min-height: 100vh;
+  width: 100%;
+}
+.centerMax1000{
+  position: relative;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.header{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index:10;
+  padding: 16px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.menuButton{
+  display: none;
+}
+
+
+
+.search{
+  padding: 5px;
+  width: 100%;
+}
+
+.footer{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+  z-index:10;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav{
+  text-align: center;
+}
+.nav input{
+  margin-top: 50px;
+  width:calc(100% - 20px);
+  padding:2px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.nav ul li{
+  padding: 10px;
+  list-style-type: none;
+}
+.nav ul li a{
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+.nav ul li button{
+  width: 100%;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main{
+  position: relative;
+  margin: auto;
+  max-width: 1000px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
+
+.post{
+  margin:20px auto;
+  padding: 10px;
+  max-width: 500px;
+}
+
+img{
+  max-width: 100%;
+}
+.sideBar{
+  margin-top: 16px;
+  position: relative;
+}
+.postsContainer{
+}
+
+.postViewContainer{
+  position: relative;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 16px;
+  word-wrap: break-word;
+}
+
+
