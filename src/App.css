@@ -111,7 +111,7 @@ img{
 }
 
 .postViewContainer{
-  background-color: var(--backgroundcouler2);
+  background-color: white;
   position: relative;
   padding: 10px;
   border-radius: 5px;
@@ -122,4 +122,24 @@ img{
   width:100%
 }
 
+.postViewHeader{
+display: flex;
+align-items: center;
+gap:10px;
+}
+.postViewProfilePic{
 
+  width:50px;
+  height: 50px;
+  background-color: black;
+  margin: 5px;
+  border-radius: 50%;
+  border: 0;
+}
+
+
+@media only screen and (min-width:800px) {
+  .nav{
+    
+  }
+}

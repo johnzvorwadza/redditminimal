@@ -5,8 +5,13 @@ import ReactPlayer from 'react-player'
 function PostView({ post }) {
   return (
     <div className='postViewContainer'>
+      <div className='postViewHeader'>
+        <img className='postViewProfilePic' src={post.data.thumbnail}/>
+<h3>{post.data.author}</h3>
+<span>{new Date(post.data.created_utc * 1000).toLocaleDateString()}</span>
+      </div>
+      <hr/>
     <h3>{post.data.title}</h3>
-    {post.data.author} - {new Date(post.data.created_utc * 1000).toLocaleDateString()}<br/>
     
     {post.data.url.includes(".jpg") && (<div>
       <img className='postViewImage' src={post.data.url}/>  
@@ -20,7 +25,7 @@ function PostView({ post }) {
     </div>)}
 
     {
-    post.data.selftext
+   post.data.selftext
 
     //JSON.stringify(post.data)
   }
