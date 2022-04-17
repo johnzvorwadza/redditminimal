@@ -3,6 +3,7 @@
 import logo from './logo.svg';
 import './App.css';
 import './AppMobile.css';
+import './AppMore.css';
 import Header from './Header';
 import Footer from './Footer';
 import Main from './Main';
