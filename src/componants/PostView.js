@@ -9,7 +9,7 @@ function PostView({ post }) {
     {post.data.author} - {new Date(post.data.created_utc * 1000).toLocaleDateString()}<br/>
     
     {post.data.url.includes(".jpg") && (<div>
-      <img src={post.data.url}/>  
+      <img className='postViewImage' src={post.data.url}/>  
     </div>)}
 
     {post.data.url.includes(".mp4") && (<div>
