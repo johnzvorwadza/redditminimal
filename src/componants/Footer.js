@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 const Footer =()=>{
     const username = useSelector(state=>state.user);
 return(<div className='footer'>
-<p>&copy;johncode.co.uk</p>
+<p><a className='footerlink'  href='https://johncode.co.uk'>&copy;johncode.co.uk</a></p>
 
 </div>)
 }

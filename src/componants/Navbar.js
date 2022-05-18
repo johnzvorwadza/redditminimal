@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import SidebarControls from './SidebarControls';
+import SidebarControls from '../SidebarControls';
 
 function Navbar() {
     const r = useSelector(state=>state.data.r);
@@ -16,11 +16,10 @@ function Navbar() {
     return(<div className="nav">
         <h3>r/{r}</h3>
         <ul>
-        <li><button onClick={()=>dispatch({"type":"setR",payload:"unitedkingdom"})}>United Kingdom</button></li>
             <li><button onClick={()=>dispatch({"type":"setR",payload:"pics"})}>Pics</button></li>
-            <li><button onClick={()=>dispatch({"type":"setR",payload:"animals"})}>Animals</button></li>
-            <li><button onClick={()=>dispatch({"type":"setR",payload:"dogs"})}>Dogs</button></li>
-            <li><button onClick={()=>dispatch({"type":"setR",payload:"wildlife"})}>Wild Life</button></li>
+            <li><button onClick={()=>dispatch({"type":"setR",payload:"AnimalPhotography"})}>Animal Photography</button></li>
+            <li><button onClick={()=>dispatch({"type":"setR",payload:"dogphotography"})}>Dogs</button></li>
+            <li><button onClick={()=>dispatch({"type":"setR",payload:"sportsphotography"})}>Sports Photography</button></li>
         </ul>
     </div>)
 }

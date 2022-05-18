@@ -2,7 +2,7 @@
   --maincolor:rgba(0, 0, 0, 0.75);
   --maincolordark:#0cf9e0;
 
-  --backgroundcolor1: #f0f2f5;
+  --backgroundcolor1: #cccccc;
   --backgroundcouler2:  #f7f7f7;
 }
 *{padding: 0;margin: 0;position:relative;}
@@ -13,6 +13,10 @@ body{
   min-height: 100vh;
   width: 100%;
   background-color: var(--backgroundcolor1);
+}
+div{
+  max-width: 100%;
+  text-overflow: ellipsis;
 }
 .centerMax1000{
   position: relative;
@@ -36,6 +40,7 @@ body{
 
 
 
+
 .search{
   margin-top: 10px;
   padding: 5px;
@@ -45,17 +50,24 @@ body{
 .footer{
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  bottom: 0;
   z-index:10;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--backgroundcolor1);
+  background:rgb(33, 35, 36);
+  padding: 16px;
+  color: orangered;
+}
+
+.footerlink{
+color: orangered;
+text-decoration: none;
 }
 
 .nav{
   text-align: center;
   background-color: var(--backgroundcouler2);
+  border-radius: 5px;
 }
 .nav input{
   margin-top: 50px;
@@ -78,8 +90,8 @@ body{
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
-  background-color: black;
-  color: white;
+  background-color: orangered;
+  color: black;
   font-weight: bold;
   border-radius: 5px;
   border: 0;

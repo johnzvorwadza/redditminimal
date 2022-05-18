@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setS } from './redux/reducers/MainReducer';
+import { setS } from '../redux/reducers/MainReducer';
+import '../styles/Header.css';
 
 
 const Header =()=>{
@@ -16,7 +17,7 @@ const [searcvalue, setSearchValue] = useState("");
     
 return(<div className='header'>
     <div className='centerMax1000'>
-<h3>Reddit Minimal</h3>
+<h3 className='logo'>Reddit Minimal</h3>
 <div>
     <input  className='search' onKeyUp={(e) => search(e.target.value)}  type="text" placeholder={`search r/${r}`}/></div>
 </div>

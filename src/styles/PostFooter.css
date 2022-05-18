@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+.postfooter{
+    display: flex;
+    justify-content: space-between;
+    color:gray;
+    font-family: 'Mukta', sans-serif;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 68, 0, 0.425);
+    color: orangered;
+    font-size: 0.75em;
+}
+.upvote{
+    margin-right:10px;
+    width: 16px;
+    aspect-ratio: 1;
+    transform: rotate(270deg);
+}
+.downvote{
+    margin-left:10px;
+    transform: rotate(90deg);
+}
+
+.upvotescont{
+    display: inline-flex;
+    justify-content: center;
+}
+
+.comment{
+    margin-right:10px;
+    width: 16px;
+    aspect-ratio: 1;
+
+}
+.commentcont{
+    display: inline-flex;
+    justify-content: center;
+
+}

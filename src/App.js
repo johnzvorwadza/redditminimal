@@ -1,12 +1,10 @@
 
-
-import logo from './logo.svg';
-import './App.css';
-import './AppMobile.css';
-import './AppMore.css';
-import Header from './Header';
-import Footer from './Footer';
-import Main from './Main';
+import './styles/App.css';
+import './styles/AppMobile.css';
+import './styles/AppMore.css';
+import Header from './componants/Header';
+import Footer from './componants/Footer';
+import Main from './componants/Main';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import SidebarControls from './SidebarControls';

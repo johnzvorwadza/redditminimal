@@ -7,8 +7,8 @@
       top: 5px;
       right: 30px;
       aspect-ratio: 1;
-      background-color: black;
-      background-image: url("./files/images/menu.png");
+      background-color: orangered;
+      background-image: url("../files/images/menu.png");
       background-repeat: no-repeat;
       background-size: cover;
       border: 0;
@@ -16,7 +16,7 @@
     }
   
     .menuButton[display-visible=false]{
-      background-image: url("./files/images/close.png");
+      background-image: url("../files/images/close.png");
       background-color: transparent;
     }
   
@@ -30,14 +30,14 @@
   
     .sideBar{
       padding-top: 50px;
-      width: 100%;
+      width: 50%;
       height: 100vh;
       margin-top: 0px;
       background-color: #282c34;
       z-index:12;
       top:0;
-      left:0;
-      transition: left 2s;
+      left:50%;
+      transition: left 0.5s;
       position: fixed;
   
       

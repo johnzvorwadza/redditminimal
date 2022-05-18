@@ -1,0 +1,10 @@
+.loadingimageCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+.loadingimage{
+    width:48px;
+    height: 48px;
+}
